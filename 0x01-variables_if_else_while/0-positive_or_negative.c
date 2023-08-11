@@ -1,15 +1,13 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* more headers goes there */
 
 /**
  * main -  Entry point
  * description: "check for numbers if its positive or negative"
- * return: always 0
+ * return: Always 0
  */
 
-/* betty style doc for function main goes there */
 int main(void)
 {
 	int n;
