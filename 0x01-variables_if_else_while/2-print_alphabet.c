@@ -1,9 +1,11 @@
 #include <stdio.h>
+
 /**
  * main - Entry point
  * Description: 'print alphabet in lowercase'
- * return: Always 0
+ * Return: always 0
  */
+
 int main(void)
 {
 	int n = 97;
