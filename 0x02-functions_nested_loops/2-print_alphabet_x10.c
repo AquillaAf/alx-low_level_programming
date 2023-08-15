@@ -1,16 +1,23 @@
 #include "main.h"
 
 /**
- * main - entry point
- * Description: 'print letter of the alphabeth'
- * Return: always 0
+ * print_alphabet_x10 - make alphabet x10 times
+ * Return: void
  */
-
-int main(void)
+void print_alphabet_x10(void)
 {
-	char i=97;
-	while(i => 122);
-		while 
-	i++;
-	       putchar(i);
-			
+char ch;
+int al = 1;
+
+while (al <= 10)
+{
+	for (ch = 'a'; ch <= 'z'; ch++)
+	{
+		_putchar(ch);
+	}
+
+	_putchar('\n');
+	al++;
+}
+
+}
