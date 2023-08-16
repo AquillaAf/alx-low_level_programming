@@ -1,9 +1,8 @@
 #include "main.h"
 
 /**
- * main - entry point
- * Description: 'print letter of the alphabeth'
- * Return: always 0
+ * print_alphabet - 'print letter of the alphabeth'
+ *
  */
 
 void print_alphabet(void)
