@@ -1,3 +1,5 @@
+
+void swap_int(int *a, int *b);
 #include "main.h"
 #include <stdio.h>
 
