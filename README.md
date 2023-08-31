@@ -1,1 +1,1 @@
-This repo contains programs in c programming language
+inside this repository, contains the c program lessons 
