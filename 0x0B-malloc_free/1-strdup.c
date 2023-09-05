@@ -12,9 +12,9 @@
 char *_strdup(char *str)
 {
 	int i;
+	int j;
 	int size = 0;
-	char * copy_str;
-	size_t len;
+	char *copy_str;
 
 	if (str == NULL)
 	{
@@ -25,14 +25,13 @@ char *_strdup(char *str)
 	{
 		size++;
 	}
-	len = size;
 
-	copy_str = malloc((len + 1) * sizeof(char));
+	copy_str = malloc((size + 1) * sizeof(char));
 	if (copy_str == NULL)
 	{
 		return (NULL);
 	}
-	strcpy(copy_str, str);
-
+	for (j = 0; j != '\0'; j++)
+		copy_str[j] = str[j];
 	return (copy_str);
 }
