@@ -4,9 +4,9 @@
 
 /**
  * _strdup - points to a string that is a parameter in the function
- * @str: points to a string 
+ * @str: points to a string
  *
- * Return: str that is copied 
+ * Return: str that is copied
  * NULL if str is null
  */
 char *_strdup(char *str)
@@ -14,24 +14,25 @@ char *_strdup(char *str)
 	int i;
 	int size = 0;
 	char * copy_str;
+	size_t len;
 
-	
 	if (str == NULL)
 	{
-		return NULL;
+		return (NULL);
 	}
 
 	for (i = 0; i != '\0'; i++)
 	{
 		size++;
 	}
+	len = size;
 
-	copy_str = malloc ((size + 1) * sizeof(char));
+	copy_str = malloc((len + 1) * sizeof(char));
 	if (copy_str == NULL)
 	{
-		return NULL;
+		return (NULL);
 	}
 	strcpy(copy_str, str);
-	
+
 	return (copy_str);
 }
