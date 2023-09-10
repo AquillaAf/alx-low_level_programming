@@ -43,9 +43,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		if (i < count1)
 			cat[i] = s1[i];
-		else if (n >= count2)
+		else if (n >= count2 && i < count1 + count2)
 			cat[i] = s2[i - count1];
-		else if (i - count1 < n)
+		else if (i - count1 < n && n < (n + count1))
 			cat[i] = s2[i - count1];
 	}
 	return (cat);
