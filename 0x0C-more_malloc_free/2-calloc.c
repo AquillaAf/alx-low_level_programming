@@ -3,8 +3,8 @@
 
 /**
  * _calloc -  malloc to array
- * @nmemb: elements
- * @size of each element
+ * @nmemb: number of element member
+ * @size: size of each element
  *
  * Return: void
  */
@@ -30,12 +30,10 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		free(array);
 		exit(1);
 	}
-	
-	for(j = 0; j < nmemb; j++)
+
+	for (j = 0; j < nmemb; j++)
 	{
 		array[j] = 0;
 	}
-	return(array);
+	return (array);
 }
-
-
