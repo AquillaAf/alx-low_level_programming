@@ -2,20 +2,22 @@
 #define DOG_H
 
 /**
- * struct dog - structure for multiple data types
+ * struct dog_t - structure for multiple data types
  * @name: 1st memb
  * @age: 2nd memb
  * @owner: 3rd memb
  *
  */
 
-struct dog
+typedef struct dog_t
 {
 	char *name;
 	float age;
 	char *owner;
-};
+} dog_t;
 
-void print_dog(struct dog *d);
-void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog_t *d);
+void init_dog(struct dog_t *d, char *name, float age, char *owner);
+
+
 #endif
