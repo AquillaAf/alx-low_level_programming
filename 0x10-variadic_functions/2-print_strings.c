@@ -6,7 +6,7 @@
 * @separator: seperates the string
 * @n: number of strings
 *
-*Return: 
+*Return:
 */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
@@ -15,15 +15,14 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	char *point;
 
 	va_start(str, n);
-	for(i = 0; i < n; i++)
- 	{
+	for (i = 0; i < n; i++)
 		point = va_arg(str, char*);
 		if (point == NULL)
 		printf("(nil)");
 		else
 		printf("%s", point);
-		if (i != (n- 1) && separator != NULL)
+		if (i != (n - 1) && separator != NULL)
 		printf("%s", separator);
-	}
+
 	printf("\n");
 }
