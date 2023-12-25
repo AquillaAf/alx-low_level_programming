@@ -34,7 +34,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 	z = write(STDOUT_FILENO, s, j);
-	if (z == -1 || z != k)
+	if (z == -1 || z != j)
 	{
 		free(s);
 		return (0);
