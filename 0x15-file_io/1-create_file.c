@@ -24,14 +24,13 @@ int create_file(const char *filename, char *text_content)
 	{
 		while (text_content[count] != '\0')
 			count++;
-
 	}
 	else
 	{
 		close(j);
 		return (1);
 	}
-	k = write(j, text_content, strlen(text_content));
+	k = write(j, text_content, count);
 	if (j != count || k == -1)
 	{
 		return (-1);
